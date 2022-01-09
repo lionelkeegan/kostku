@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/icon.png" type="image/png">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -122,11 +125,15 @@
                     </span>
                 </div>
                 <div class="service-content">
-                    <h2>Room Security</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia
-                        accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur
-                        doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis
-                        rem autem ex, reiciendis corporis suscipit!</p>
+                    <h2>KOSTAN dekat dengan kampus</h2>
+                    <p>kostan dekat kampus sehingga membuat anda bisa lebih hemat dalam ongkos perjalanan ke kampus
+                        karna tak perlu lagi perjalanan jauh untuk ke kampus, karna kita kostan anda sudah dekat dengan
+                        kampus, anda tak perlu lagi khawatir hal itu. Tak hanya dekat dengan kampus, kostan anda juga
+                        dekat
+                        dengan tempat perbelanjaan jadi tak perlu khawatir lagi dengan kebutuhan anda sehari-hari, karna
+                        sudah
+                        bisa terpenuhi dengan adanya pusat perbelanjaan yang dekat tak jauh dari kostan anda.
+                    </p>
                     <button type="button" class="btn">Know More</button>
                 </div>
             </article>
@@ -137,28 +144,36 @@
     <div class="book" id="book">
         <form class="book-form">
             <div class="form-item">
-                <label for="checkin-date">Check In Date: </label>
-                <input type="date" id="chekin-date">
+                <label>Nama</label>
+                <input type="text" name="name" class="form-control" placeholder="Nama" id="name">
             </div>
             <div class="form-item">
-                <label for="checkout-date">Check Out Date: </label>
-                <input type="date" id="chekout-date">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Email" id="email">
             </div>
             <div class="form-item">
-                <label for="adult">Adults: </label>
-                <input type="number" min="1" value="1" id="adult">
+                <label>Alamat tempat tinggal</label>
+                <input type="text" name="alamat" class="form-control" placeholder="alamat anda" id="alamat">
             </div>
             <div class="form-item">
-                <label for="children">Children: </label>
-                <input type="number" min="1" value="1" id="children">
+                <label>Pilih Produk</label>
+                <select name="product" class="form-control" id="product">
+                    <option value="">-- Pilih Produk --</option>
+                    <option value="produk_1">KOSTAN annas</option>
+                    <option value="produk_2">KOSTAN greensuite</option>
+                    <option value="produk_3">KOSTAN putri muslimah ummi</option>
+                    <option value="produk_4">KOSTAN putri qonita</option>
+                </select>
             </div>
             <div class="form-item">
-                <label for="rooms">Rooms: </label>
-                <input type="number" min="1" value="1" id="rooms">
+                <label>Catatan</label>
+                <textarea name="description" class="form-control" rows="3" id="description"></textarea>
             </div>
             <div class="form-item">
-                <input type="submit" class="btn" value="Book Now">
+
+                <button class="btn btn-success send"><i class="fab fa-whatsapp"> Pesan via WhatsApp </i></button>
             </div>
+            <div id="text-info"></div>
         </form>
     </div>
 
@@ -325,12 +340,15 @@
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
-                        <span><i class="far fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+
                     </div>
-                    <h3>We Loved it</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
-                        eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
-                    <img src="images/cus1.jpg" alt="customer image">
+                    <h3>Sangat Suka </h3>
+                    <p>Sangat suka, kostannya nyaman ,bersih , dan dingin, serta deket dengan kampus
+                        hingga gak perlu perbelanjaan jauh untuk pergi ke kampus karna sekarang sudah
+                        dekat kampus dan tidak perlu khawatir lagi datang telat.
+                    </p>
+                    <img src="images/fadel annas.jpg" alt="customer image">
                     <span>Customer Name, Country</span>
                 </div>
                 <!-- end of single customer -->
@@ -341,12 +359,14 @@
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
-                        <span><i class="far fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+
                     </div>
-                    <h3>Comfortable Living</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
-                        eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
-                    <img src="images/cus2.jpg" alt="customer image">
+                    <h3>Kostan nyaman</h3>
+                    <p>kostannya nyaman, dingin ada AC nya, trus ada wifinya yg buat makin betah di kostan
+                        dingin kalo lagi siang hari, kostan deket dengan pusat perbelanjaan sehingga tidak perlu lagi
+                        jauh-jauh nyari warung buat beli perlengkapan sehari sehari-hari</p>
+                    <img src="images/hisyam.jpg" alt="customer image">
                     <span>Customer Name, Country</span>
                 </div>
                 <!-- end of single customer -->
@@ -357,12 +377,14 @@
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
-                        <span><i class="far fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+
                     </div>
-                    <h3>Nice Place</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
-                        eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
-                    <img src="images/cus3.jpg" alt="customer image">
+                    <h3>Kostan Keren</h3>
+                    <p>kostannya keren deket pusat perbelanjaan, ada ACnya + WIFI waw keren sekali lengkap ya kostannya
+                        jadi gak bakal bosen di kostan. bakal betah di kostan apalagi kalo lagi banyak tugas kuliah
+                        jadi gak perlu keluar buat balikin mood untuk ngerjain tugas kuliah. </p>
+                    <img src="images/nopal 3.jpg" alt="customer image">
                     <span>Customer Name, Country</span>
                 </div>
                 <!-- end of single customer -->
@@ -376,53 +398,46 @@
         <div class="footer-container">
             <div>
                 <h2>About Us </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus
-                    provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+                <p>KOSTKU merupakan website pencari kostan yang ramah,hemat,dan mudah. dimana ada berbagai macam
+                    tipe-tipe kostan yang tersedia dari yang kostan memiliki ac dan wifi dan ada juga yang hanya
+                    memiliki AC saja. nyari kostan? KOSTKU aja!!!.
+                </p>
                 <ul class="social-icons">
+
                     <li class="flex">
-                        <i class="fa fa-twitter fa-2x"></i>
+
+                        <a href="https://m.facebook.com/profile.php?id=100076689700424">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+
                     </li>
                     <li class="flex">
-                        <i class="fa fa-facebook fa-2x"></i>
-                    </li>
-                    <li class="flex">
-                        <i class="fa fa-instagram fa-2x"></i>
+
+                        <a href="https://www.instagram.com/kostkuu/">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+
                     </li>
                 </ul>
             </div>
 
             <div>
                 <h2>Useful Links</h2>
-                <a href="#">Blog</a>
-                <a href="#">Rooms</a>
-                <a href="#">Subscription</a>
-                <a href="#">Gift Card</a>
-            </div>
-
-            <div>
-                <h2>Privacy</h2>
-                <a href="#">Career</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Services</a>
+                <a href="#header">home</a>
+                <a href="#services">services</a>
+                <a href="#rooms">rooms</a>
+                <a href="#customers">customers</a>
             </div>
 
             <div>
                 <h2>Have A Question</h2>
-                <div class="contact-item">
-                    <span>
-                        <i class="fas fa-map-marker-alt"></i>
-                    </span>
-                    <span>
-                        203 Fake St.Mountain View, San Francisco, California, USA
-                    </span>
-                </div>
+
                 <div class="contact-item">
                     <span>
                         <i class="fas fa-phone-alt"></i>
                     </span>
                     <span>
-                        +84545 37534 48
+                        +628988851181
                     </span>
                 </div>
                 <div class="contact-item">
@@ -430,15 +445,59 @@
                         <i class="fas fa-envelope"></i>
                     </span>
                     <span>
-                        info@domain.com
+                        achmadirvanf@gmail.com
                     </span>
                 </div>
+            </div>
+            <div>
+                <p class="credit"> created by <span>KOSTKU #KOSTKUAJA</span> | all rights reserved! </p>
             </div>
         </div>
     </footer>
     <!-- end of footer -->
 
     <script src="js/script.js"></script>
+
+    <!-- script WA Start -->
+    <script type="text/javascript">
+        $(document).on('click', '.send', function () {
+            /* Inputan Formulir */
+            var input_name = $("#name").val(),
+                input_email = $("#email").val(),
+                input_alamat = $("#alamat").val(),
+                input_product = $("#product").val(),
+                input_description = $("#description").val();
+
+            /* Pengaturan Whatsapp */
+            var walink = 'https://web.whatsapp.com/send',
+                phone = '628988851181',
+                text = 'Halo saya ingin memesan ',
+                text_yes = 'Pesanan Anda berhasil terkirim.',
+                text_no = 'Isilah formulir terlebih dahulu.';
+
+            /* Smartphone Support */
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                var walink = 'whatsapp://send';
+            }
+
+            if (input_name != "" && input_alamat != "" && input_product != "") {
+                /* Whatsapp URL */
+                var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
+                    '*Nama* : ' + input_name + '%0A' +
+                    '*Alamat Email* : ' + input_email + '%0A' +
+                    '*alamat * : ' + input_alamat + '%0A' +
+                    '*Produk* : ' + input_product + '%0A' +
+                    '*Catatan* : ' + input_description + '%0A';
+
+                /* Whatsapp Window Open */
+                window.open(checkout_whatsapp, '_blank');
+                document.getElementById("text-info").innerHTML = '<div class="alert alert-success">' + text_yes + '</div>';
+            } else {
+                document.getElementById("text-info").innerHTML = '<div class="alert alert-danger">' + text_no + '</div>';
+            }
+        });
+    </script>
+    <!-- Script WA end -->
 </body>
 
 </html>
